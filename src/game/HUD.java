@@ -77,8 +77,8 @@ public class HUD extends JPanel{
                     case null -> {
                         g.drawImage(floorSprite, x, y, TILE, TILE, observer);
                     }
-                    case Wall _ -> g.drawImage(wallSprite, x, y, TILE, TILE, observer);
-                    case ExitTile _ -> g.drawImage(exitSprite, x, y, TILE, TILE, observer);
+                    case Wall a -> g.drawImage(wallSprite, x, y, TILE, TILE, observer);
+                    case ExitTile b -> g.drawImage(exitSprite, x, y, TILE, TILE, observer);
                     default -> g.drawImage(floorSprite, x, y, TILE, TILE, observer);
                 }
             }
